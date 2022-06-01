@@ -1,0 +1,1059 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,500&display=swap');
+
+/* To Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Base */
+*{
+  color: #E9D5DA;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;  
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html, body {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  width: 100%;
+  display: block;
+  overflow-x: hidden;
+}
+body{
+  background-image: url('img/background.jpg'); 
+  background-size: 100%;
+  overflow-x:hidden;
+  -webkit-text-size-adjust:none;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.default{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+/* Class Helper for easy padding adjustment */
+.p--sm {
+  padding: 10px;
+}
+.p--md{
+  padding: 20px;
+}
+.p--lg{
+  padding: 30px;
+}
+.pl--sm {
+  padding-left: 10px;
+}
+.pl--md {
+  padding-left: 20px;
+}
+.pl--lg {
+  padding-left: 30px;
+}
+.pr--sm {
+  padding-right: 10px;
+}
+.pr--md{
+  padding-right: 20px;
+}
+.pr--lg{
+  padding-right: 30px;
+}
+.pt--sm{
+  padding-top: 10px;
+}
+.pt--md{
+  padding-top: 20px;
+}
+.pt--lg{
+  padding-top: 30px;
+}
+.pt--xs{
+  padding-top: 10%;
+}
+.pt--none{
+  padding-top: 0%;
+}
+.pb--none {
+  padding-bottom: 0%;
+}
+.pb--sm{
+  padding-bottom: 10px;
+}
+.pb--md{
+  padding-bottom: 20px;
+}
+.pb--lg{
+  padding-bottom: 30px;
+}
+
+/* Layout */
+.grid-container{
+  display: grid;  
+  width: 100%;
+}
+.grid-container > div {
+  height: 100%;
+}
+.column--12{
+  grid-column: span 12;
+  grid-row: 1;
+}
+.column--10{
+  grid-column: span 10;
+  grid-row: 1;
+}
+.column--8{
+  grid-column: span 8;
+  grid-row: 1;
+}
+.column--6{
+  grid-column: span 6;
+  grid-row: 1;
+}
+.column--4{
+  grid-column: span 4;
+  grid-row: 1;
+}
+.column--2{
+  grid-column: span 2;
+  grid-row: 1;
+}
+.flex-container{
+  display: flex;
+}
+.flex-container > div {
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin: 0;
+}
+.flex--sm {
+  flex-basis: 20%;
+}
+.flex--md {
+  flex-basis: 30%;
+}
+.flex--lg {
+    flex-basis: 50%;
+}
+
+/* Specifics */
+/* Navigation Bar */
+header a{
+  font-size: 20px;
+  text-shadow: 0 0 2px #E9D5DA, 0px 5px 5px #403d3d;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+nav a {
+  text-transform: uppercase;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding-bottom: 30px;
+}
+nav ul li.active a{
+  border-bottom: 3px solid #e9d5daba;
+}
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-right: 30px;
+}
+.icon-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  padding-right: 30px;
+}
+.logo-container img{
+  max-width: 120px; 
+}
+
+/*Footer*/
+footer{
+  background: rgba(54, 48, 98, 0.89);
+
+}
+.footer-links{
+  list-style-type: none;
+}
+
+.about ul{
+  list-style-type: disc;
+  padding-left: 30px;
+}
+.about p{
+  max-width: 300px;
+}
+.contact-details{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.contact-details p{
+  white-space: pre-wrap;
+}
+h4{
+  text-transform: uppercase;
+}
+.logo-container a{
+  text-shadow: 0 0 2px #E9D5DA, 0px 5px 5px #403d3d;
+}
+
+footer .logo-container{
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icons{
+  justify-content: space-between;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 1060px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .icons{
+    /* justify-content: space-between; */
+    max-width: 10px;
+  }
+
+}
+
+/* Button */
+.button {
+  border: 10px solid #363062;
+  border-radius: 50px;
+  background-color: #E9D5DA;
+  color: #363062;
+  padding: 10px 50px;
+  font-size: 25px; 
+  min-width: 250px;
+}
+.review-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-----LANDING PAGE-----*/
+
+/* Hero Header */
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.hero-section {
+  flex: 1 1 100%;
+}
+.hero-image img{
+  width: 100%;
+}
+.hero p {
+  max-width: 700px;
+}
+.hero-image {
+  max-width: 600px;
+}
+.hero-headline {
+  text-shadow: 0 0 2px #E9D5DA, 0px 5px 5px #403d3d;
+  letter-spacing: 0.05em;
+}
+.hero-headline h1 {
+  font-size: 90px;
+}
+.hero-headline h4 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.hero-headline p {
+  font-size: 20px;
+  font-weight: 300;
+}
+@media screen and (max-width: 900px) {
+  .hero {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-headline {
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero {
+    flex-direction: row;
+  }
+  .hero-section{
+    flex: 1 1 50%;
+  }
+}
+
+/* What is Among Us? & How To Play*/
+.preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.preview-section{
+  flex: 1 1 100%; 
+}
+.preview-img img{
+  max-width: 900px;
+  border: 20px solid #363062;
+  border-radius: 50px;
+  width: 100%;
+}
+.preview-content {
+  max-width: 900px;
+}
+.preview-content h1{
+  font-size: 90px;
+}
+.preview-content p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Game Reviews */
+.reviews {
+  margin-top: 20px;
+}
+.review-item{
+  display: flex;  
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  border: 10px solid #363062;
+  border-radius: 25px;
+  margin-top: 10px;
+  min-width: 900px;
+}
+.review-content{
+  flex: 1 1 auto;
+  background: #E9D5DA;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.review-content p, .review-content h5{
+  color:#363062;
+  letter-spacing: 0.05em;
+}
+.review-content p{
+  font-size: 20px;
+  font-weight: 400;
+}
+.review-content h5{
+  font-size: 30px;
+}
+.review-image{
+  flex: 1 1 auto;
+  border: 10px solid #363062;
+  box-shadow: 13px 0px 0px #363062;
+  border-radius: 14px;
+  overflow: hidden;
+  min-width: 200px;
+  max-height: 200px;
+}
+.review-content-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.review-desc h5{
+  font-size: 90px;
+  text-align: center;
+}
+.review-section{
+  background-color: #E9D5DA;
+}
+
+/* Review Landing Page Responsiveness*/
+@media screen and (max-width: 750px) {
+  .review-item{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .review-image img{
+    max-height: 300px;
+  }
+  .review-container{
+    display: block;
+    position: relative;
+    overflow-x: scroll;
+    padding-bottom: 30px;  
+    max-width: 900px;
+}
+}
+
+/* Maps */
+.maps{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.map-section{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.map-item{ 
+  width: 100%;
+  margin-top: 10px;
+}
+.map-item .map-1{
+  justify-content: flex-start;
+  z-index: 500;
+}
+.map-item .map-2{
+  justify-content: center;
+  margin-top: -250px;
+  margin-bottom: -250px;
+  z-index: 400;
+}
+.map-item .map-3{
+  justify-content: flex-end;
+  z-index: 300;
+  margin-top: -150px;
+}
+.map-item img{
+  border: 15px solid #363062;
+  border-radius: 30px;
+  max-width: 600px;
+}
+.map-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.map-preview-content {
+  max-width: 900px;
+}
+.map-preview-content h1{
+  font-size: 90px;
+  text-align: center;
+}
+.map-preview-content p{
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Tips/Tricks */
+.tips-preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.tips-preview-section{
+  flex: 1 1 100%; 
+}
+.tips-preview-img{
+  max-width: 900px;
+  border: 20px solid #363062;
+  border-radius: 50px;
+  width: 100%;
+  background-color: #E9D5DA;
+}
+.tips-preview-content {
+  max-width: 900px;
+}
+.tips-preview-content h1{
+  font-size: 90px;
+}
+.tips-preview-content p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/*Characters*/
+.characters-preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.characters-preview-section{
+  flex: 1 1 100%; 
+}
+.characters-preview-img{
+  max-width: 900px;
+  border: 20px solid #363062;
+  border-radius: 50px;
+  width: 100%;
+  background-color: #E9D5DA;
+}
+.characters-preview-img img {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+}
+.characters-preview-content {
+  max-width: 900px;
+}
+.characters-preview-content h1{
+  font-size: 90px;
+}
+.characters-preview-content p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* -----About Page----- */
+
+/*Header Header(About Page)*/
+.header-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.header-page-section{
+   flex: 1 1 100%; 
+}
+.header-page-img img{
+    max-width: 900px;
+    border: 20px solid #363062;
+    border-radius: 50px;
+    width: 100%;
+}
+.header-page-section p{
+    display: flex;
+    text-align: center;
+    max-width: 900px;
+    font-size: 20px;
+    font-weight: 300;
+ }
+
+/* .header-page-content {
+    max-width: 900px;
+} */
+.header-page-content h1{
+    font-size: 70px;
+}
+
+/* Title Underline */
+.underline{
+    width:100%;
+    border: 4px solid #E9D5DA;
+    border-radius: 10px;
+}
+
+/* Game Information */
+.about-page-section{
+  flex: 1 1 100%; 
+}
+.about-page-img img{
+   max-width: 900px;
+   width: 100%;
+}
+.about-page-section p{
+  display: flex;
+  text-align: left;
+  max-width: 900px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.about-page-section h1{
+  display: flex;
+  text-align: left;
+  max-width: 900px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.about-page-content h1{
+  font-size: 70px;
+  text-transform: uppercase;  
+}
+.about-edit{
+  text-transform: capitalize 
+}
+.about-title{
+  max-width: 450px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 700px;
+}
+
+/* Reviews Section */
+.review-gallery-thumbnails{
+  display: block;
+  position: relative;
+  overflow-x: scroll;
+  padding-bottom: 30px;
+}
+.review-gallery-items {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.review-gallery-item{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  justify-content: center;
+  background-color: #E9D5DA;
+  border: 13px solid #363062;
+  border-radius: 28px;
+  max-width: 900px;
+}
+.review-gallery-content{
+/* justify-content: center; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+border: 5px solid #363062;
+border-top-left-radius: 13px;
+border-top-right-radius: 13px;
+background-color: #363062;
+color: #E9D5DA;
+/* box-shadow: 0px 14px 0px #363060; */
+}
+.review-gallery-image{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.review-gallery-items-desc{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.review-gallery-items-desc p{
+  max-width: max-content;
+}
+.review-gallery-item p {
+  /* max-width: max-content;
+  background-color: #363062;
+  color: #E9D5DA; */
+  width: 100%;
+  padding: 10px 20px 75px 20px;
+  border: 5px solid #363062;
+  border-radius: 22px;
+  
+  max-width: 300px;
+  max-height: 239px;
+}
+.review-gallery-item img {
+    max-width: 100px;
+}
+.star-icon {
+  display: flex;
+  justify-content: center;
+  box-shadow: 9px 0px 0px #363062;
+}
+.star-icon img {
+  max-width: 150px;
+}
+
+@media screen and (max-width: 1060px) {
+    .review-gallery-items {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: max-content;
+    }
+    .review-gallery-item img{
+        max-height: 300px;
+    }
+}
+
+
+/* How To Play */
+/* .how-to-play {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    gap: 20px;
+    justify-content: space-between; 
+    overflow-x: scroll;
+} */
+.how-to-section p{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.how-to-section button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.how-to-section img{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    border: 20px solid #363062;
+    border-radius: 50px;
+}
+
+
+/*How To Play Header*/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+.gallery-thumbnails{
+    display: block;
+    position: relative;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+}
+.gallery-items {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+.gallery-item img{
+    width: 100%;
+    border: 20px solid #363062;
+    border-radius: 50px;
+} 
+@media screen and (max-width: 1060px) {
+    .gallery-items {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        /* width: max-content; */
+    }
+    .gallery-item img{
+        max-height: 300px;
+    }
+}
+
+/* Game Strategies */
+.strats {
+  margin-top: 20px;
+}
+.strats-desc h5{
+  font-size: 90px;
+  text-align: center;
+}
+.strats-item{
+  display: flex;  
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  /* border: 12px solid #363062; */
+  border-radius: 35px;
+  margin-top: 10px;
+  min-width: 900px;
+  /* max-height: 164px; */
+  min-width: 350px;
+}
+.strats-content{
+  flex: 1 1 auto;
+  background: #E9D5DA;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  min-width: 150px;
+
+  border: 10px solid #363062;
+  /* border-left-color: rgb(54, 48, 98);
+  border-left-style: solid;
+  border-left-width: 10px; */
+border-left: 0px;
+}
+.strats-content p, .strats-content h5{
+  color:#363062;
+  letter-spacing: 0.05em;
+}
+.strats-content p{
+  font-size: 15px;
+  font-weight: 400;
+}
+.strats-content h5{
+  font-size: 30px;
+}
+.strats-content h4{
+  font-size: 20px;
+}
+.strats-image{
+  flex: 1 1 auto;
+  border: 10px solid #363062;
+  box-shadow: 13px 0px 0px #363062;
+  border-radius: 14px;
+  overflow: hidden;
+  min-width: 200px;
+  max-height: 200px;
+  text-align: center;
+}
+.strats-num{
+  flex: 1 1 auto;
+  border: 10px solid #363062;
+  box-shadow: 13px 0px 0px #363062;
+  border-radius: 14px;
+  overflow: hidden;
+  min-width: 115px;
+  min-height: 132px;
+  text-align: center;
+  /* padding: 40px; */
+  padding: 20px;
+  border-top-left-radius: inherit;
+border-bottom-left-radius: inherit;
+}
+.strats-content-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.strats-section{
+  background-color: #E9D5DA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* How To Play Page Responsiveness*/
+@media screen and (max-width: 750px) {
+  .strats-item{
+    flex-wrap: nowrap;
+    /* overflow-x: scroll; */
+  }
+  .strats-image img{
+    max-height: 300px;
+  }
+  .strats-container{
+    display: block;
+    position: relative;
+    /* overflow-x: scroll; */
+    padding-bottom: 30px;  
+    max-width: 900px;
+  }
+  h5{
+    font-size: 4vw;
+  }
+  .strats-content-header{
+    font-size-adjust: 0.58;
+  }
+}
+@media screen and (max-width: 750px) {
+  .strats-item{
+    flex-wrap: nowrap;
+    /* overflow-x: scroll; */
+  }
+  .strats-image img{
+    max-height: 300px;
+  }
+  .strats-container{
+    display: block;
+    position: relative;
+    /* overflow-x: scroll; */
+    padding-bottom: 30px;  
+    max-width: 900px;
+  }
+  h5{
+    font-size: 4vw;
+  }
+  .strats-content-header{
+    font-size: 10px;
+    /* font-weight: 400; */
+  }
+  .strats-content-header{
+    font-size: 10px;
+    /* font-weight: 400; */
+  }
+}
+
+/* Maps */
+.maps-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+.maps-gallery-thumbnails{
+  display: block;
+  position: relative;
+  overflow-x: scroll;
+  padding-bottom: 30px;
+}
+.maps-gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.maps-gallery-item img{
+  width: 100%;
+  border: 20px solid #363062;
+  border-radius: 50px;
+} 
+/* Maps Page Responsiveness*/
+@media screen and (max-width: 1060px) {
+  .maps-gallery-items {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: max-content;
+  }
+  .maps-gallery-item img{
+    max-height: 300px;
+  }
+}
+
+/* Tips and Tricks */
+.tips-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+.tips-gallery-thumbnails{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.tips-gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.tips-gallery-item img{
+  width: 100%;
+  border: 20px solid #363062;
+  border-radius: 50px;
+} 
+@media screen and (max-width: 1010px) {
+  .tips-gallery-items {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: max-content; 
+    justify-content: flex-start; 
+  }
+  .tips-gallery-item img{
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: px) {
+
+}
+
+
+/*Game Mechanics Video*/
+.game-mechanics {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.game-mechanics-section{
+  flex: 1 1 100%; 
+}
+.game-mechanics-img img{
+  max-width: 900px;
+  /* border: 20px solid #363062;
+  border-radius: 50px; */
+  width: 100%;
+}
+.game-mechanics-section p{
+  max-width: 900px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.game-mechanics-img{
+  background-color: #E9D5DA;
+  border: 10px solid #363062;
+  border-radius: 22px;
+  padding-top: 0px;
+  padding-bottom: 20px; 
+}
+.game-mechanics-img p{
+  text-align: center;
+  color: #363062;
+  font-weight: 400;
+}
+.game-mechanics-content {
+  max-width: 900px;
+}
+.game-mechanics-content h1{
+  font-size: 70px;
+}
+
+/* Map  */
+
+
