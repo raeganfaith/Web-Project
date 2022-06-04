@@ -1158,8 +1158,8 @@ border-bottom-left-radius: inherit;
 }
 
 
-/*Game Mechanics Video*/
-.game-mechanics {
+/*Game Mechanics and Learn Videos*/
+.video-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1167,39 +1167,46 @@ border-bottom-left-radius: inherit;
   text-align: center;
   justify-content: center;
 }
-.game-mechanics-section{
+.video-section{
   flex: 1 1 100%; 
 }
-.game-mechanics-img img{
+.video-youtube img{
   max-width: 900px;
   /* border: 20px solid #363062;
   border-radius: 50px; */
   width: 100%;
 }
-.game-mechanics-section p{
+.video-section p{
   max-width: 900px;
   font-size: 20px;
   font-weight: 300;
 }
-.game-mechanics-img{
+.video-youtube{
+  display: flex;
+  flex-direction: column;
   background-color: #E9D5DA;
   border: 10px solid #363062;
   border-radius: 22px;
   padding-top: 0px;
   padding-bottom: 20px; 
+  
 }
-.game-mechanics-img p{
+.video-youtube iframe{
+  min-width: 400px;
+  min-height: 300px;
+  border-radius: 10px;
+}
+.video-youtube p{
   text-align: center;
   color: #363062;
   font-weight: 400;
 }
-.game-mechanics-content {
+.video-content {
   max-width: 900px;
 }
-.game-mechanics-content h1{
+.video-content h1{
   font-size: 70px;
 }
 
-/* Map  */
 
 
