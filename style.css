@@ -1284,5 +1284,55 @@ width: 100%;
   font-size: 70px;
 }
 
-
-
+/* Character Page: Best Mods You should try */
+/* Hero Header */
+.mods {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.mods-section {
+  flex: 1 1 100%;
+}
+.mods-image img{
+  width: 100%;
+}
+.mods p {
+  max-width: 700px;
+}
+.mods-image {
+  max-width: 600px;
+}
+.mods-headline {
+  text-shadow: 0 0 2px #E9D5DA, 0px 5px 5px #403d3d;
+  letter-spacing: 0.05em;
+}
+.mods-headline h1 {
+  font-size: 90px;
+}
+.mods-headline h4 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.mods-headline p {
+  font-size: 20px;
+  font-weight: 300;
+}
+@media screen and (max-width: 900px) {
+  .mods {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .mods-headline {
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .mods {
+    flex-direction: row;
+  }
+  .mods-section{
+    flex: 1 1 50%;
+  }
+}
