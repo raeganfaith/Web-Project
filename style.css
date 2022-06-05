@@ -1251,7 +1251,11 @@ width: 100%;
 .video-section p{
   max-width: 900px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
+}
+.video-section a {
+  color: #363062;
+  text-decoration: underline;
 }
 .video-youtube{
   display: flex;
