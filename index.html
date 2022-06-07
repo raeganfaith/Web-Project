@@ -3,41 +3,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Among Us for Novice and Experts</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 
 <body>
-    <!--Navigation Bar-->
-		<!-- Used Display: Grid for the parent and Flex for the child-->
-    <header>
+  <!--Navigation Bar-->
+	<!-- Used Display: Grid for the parent and Flex for the child-->
+  <header>
 			<div class="container pb--none">
 				<div class="grid-container">
-					<div class="column--2">
-						<div class="logo-container">
-							<img src="img/LOGO.png">
-							<a href="index.html">GameTech</a>
+					<div class="navbar">
+						<div class="column--2">
+							<div class="logo-container">
+								<img src="img/LOGO.png">
+								<a href="index.html">GameTech</a>
+							</div>
 						</div>
+						<nav class="column--10">
+								<ul>
+									<li class="items active"><a href="index.html">Home</a></li>
+									<li class="items"><a href="about.html">About</a></li>
+									<li class="items"><a href="reviews.html">Reviews</a></li>
+									<li class="items"><a href="how-to-play.html">How To Play</a></li>
+									<li class="items"><a href="maps.html">Maps</a></li>
+									<li class="items"><a href="tips-and-tricks.html">Tips/Tricks</a></li>
+									<li class="items"><a href="characters.html">Characters</a></li>
+									<li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+								</ul>					
+						</nav>
 					</div>
-					<nav class="column--10">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="reviews.html">Reviews</a></li>
-							<li><a href="how-to-play.html">How To Play</a></li>
-							<li><a href="maps.html">Maps</a></li>
-							<li><a href="tips-and-tricks.html">Tips/Tricks</a></li>
-							<li><a href="characters.html">Characters</a></li>
-						</ul>
-					</nav>
 				</div>
 			</div>
-    </header>
-		<!-- Web page Contents -->
-    <main>
+			
+  </header>
+	<!-- Web page Contents -->
+  <main>
 			<div class="container">
 				<!--Hero Header-->
 				<div class="hero pb--lg ">
@@ -207,7 +213,8 @@
 					</div>
 				</div>
 			</div>
-    </main>
+  </main>
+		
 	<!-- Footer Layout -->
 	<!-- Display used: Grid for parent and flex for children -->
   <footer>
@@ -297,6 +304,8 @@
         </div>
       </div>
     </div>
-  </footer>   
+  </footer> 
+	<script src="script.js"> </script>  
 </body>
+
 </html>
