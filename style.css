@@ -191,27 +191,76 @@ header a{
   line-height: 30px;
   letter-spacing: 0.05em;
 }
+.navbar{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  justify-content: space-between;
+}
 nav a {
   text-transform: uppercase;
 }
 nav{
-  display: flex;
-  align-items: center;
+  padding: 5px 40px;
 } 
 nav ul{
-  list-style-type: none;
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  gap: 30px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
   max-width: 1000px;
-  padding-bottom: 30px;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #363062;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
 }
 nav ul li.active a{
   border-bottom: 3px solid #e9d5daba;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li:hover a{
+  color: #363062;
+}
+/* Hamburger-Menu and Close Icon */
+.fa, .fas {
+  font-weight: 900;
+  font-size: xx-large;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
 }
 .logo-container{
   display: flex;
@@ -232,11 +281,31 @@ nav ul li.active a{
 .logo-container img{
   max-width: 120px; 
 }
-
+@media all and (max-width: 900px){
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    /* display: block; */
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #363062,
+                inset 0 0 10px #363062;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
 /*Footer*/
 footer{
   background: rgba(54, 48, 98, 0.89);
-
 }
 .footer-links{
   list-style-type: none;
@@ -272,6 +341,7 @@ footer .logo-container{
 .icons{
   justify-content: space-between;
   max-width: 200px;
+  
 }
 
 @media screen and (max-width: 1060px) {
@@ -280,8 +350,9 @@ footer .logo-container{
     flex-direction: column;
   }
   .icons{
-    /* justify-content: space-between; */
     max-width: 10px;
+    flex-direction: row;
+    gap: 15px;
   }
 }
 /* Button */
@@ -916,8 +987,49 @@ color: #E9D5DA;
     font-size: 10px;
   }
 }
+/* Tutorials */
+.tutorials-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+/* Araange this later */
+.tutorials-gallery-thumbnails{
+  display: block;
+  position: relative;
+  overflow-x: scroll;
+  padding-bottom: 30px;
+}
+.tutorials-gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
 
-/* Trying */
+.tutorials-gallery-item iframe{
+  width: 100%;
+  border: 20px solid #363062;
+  border-radius: 25px;
+  min-width: 530px;
+} 
+.tutorials-section button{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/* Maps Page Responsiveness*/
+@media screen and (max-width: 1060px) {
+  .tutorials-gallery-items {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: max-content;
+  }
+  .tutorials-gallery-item img{
+    max-height: 300px;
+  }
+}
 /* Character Gallery */
 .character-gallery{
   display: flex;
@@ -1225,9 +1337,7 @@ width: 100%;
     max-height: 300px;
   }
 }
-@media screen and (max-width: px) {
 
-}
 
 
 /*Game Mechanics and Learn Videos*/
@@ -1288,7 +1398,7 @@ width: 100%;
 /* Hero Header */
 .mods {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 100%;
 }
 .mods-section {
@@ -1296,6 +1406,8 @@ width: 100%;
 }
 .mods-image img{
   width: 100%;
+  border: 20px solid #363062;
+  border-radius: 50px;
 }
 .mods p {
   max-width: 700px;
@@ -1307,16 +1419,19 @@ width: 100%;
   text-shadow: 0 0 2px #E9D5DA, 0px 5px 5px #403d3d;
   letter-spacing: 0.05em;
 }
-.mods-headline h1 {
-  font-size: 90px;
+.mods-headline {
+  padding-top: 75px;
+  padding-left: 30px;
 }
 .mods-headline h4 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
+  text-align: center;
 }
 .mods-headline p {
   font-size: 20px;
   font-weight: 300;
+  text-align: center;
 }
 @media screen and (max-width: 900px) {
   .mods {
@@ -1336,3 +1451,5 @@ width: 100%;
     flex: 1 1 50%;
   }
 }
+
+
