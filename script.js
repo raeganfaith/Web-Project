@@ -1,4 +1,14 @@
-// Navigation Hamburger menu
+//Navigation Bar Toggle Function
+$(document).ready(function(){
+  $('.btn').click(function(){
+    $('.items').toggleClass("show");
+    $('ul li').toggleClass("hide");
+    $('.logo-container').toggleClass("hide");
+    $(".logo-container").toggle();
+    $("main").toggle();
+    $('footer').toggle();
+  });
+});
 
 // Toggle function of the View Task and Map
 // The Skeld toggle button
@@ -49,4 +59,6 @@ function MiraViewMap() {
   document.getElementById("div9").style.display="block";
   document.getElementById("div10").style.display="none";
 }
+
+
 
