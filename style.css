@@ -194,7 +194,6 @@ header a{
 .navbar{
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   justify-content: space-between;
 }
 nav a {
@@ -249,7 +248,11 @@ nav ul li.items{
   order: 3;
 }
 nav ul li:hover a{
-  color: #363062;
+  /* color: #363062; */
+  text-decoration: underline;
+  text-decoration-color: #E9D5DA;
+  -moz-text-decoration-color: #E9D5DA;
+  text-decoration-thickness: 5px;
 }
 /* Hamburger-Menu and Close Icon */
 .fa, .fas {
@@ -286,8 +289,14 @@ nav ul li.btn.hide i:before{
     width: 100%;
     display: none;
   }
+  nav ul li.items{
+    padding-bottom: 50px;
+  }
   nav ul li.items.show{
     display: block;
+  }
+  nav ul li a {
+    font-size: 50px;
   }
   nav ul li.btn{
     /* display: block; */
