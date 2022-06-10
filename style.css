@@ -49,6 +49,8 @@ table {
   font-style: normal;  
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  
 }
 html, body {
   text-size-adjust: none;
@@ -65,6 +67,9 @@ body{
   overflow-x:hidden;
   -webkit-text-size-adjust:none;
 }
+/* html {
+  
+} */
 .container{
     width: 100%;
     max-width: 1200px;
