@@ -258,7 +258,7 @@ nav ul li:hover a{
 /* Hamburger-Menu and Close Icon */
 .fa, .fas {
   font-weight: 900;
-  font-size: xx-large;
+  font-size: 40px;
 }
 nav ul li.btn{
   display: none;
@@ -297,7 +297,7 @@ nav ul li.btn.hide i:before{
     display: block;
   }
   nav ul li a {
-    font-size: 50px;
+    font-size: 23px;
   }
   nav ul li.btn{
     display: flex;
@@ -546,6 +546,7 @@ footer .logo-container{
   width: 100%;
   margin-top: 10px;
 }
+
 .map-item .map-1{
   justify-content: flex-start;
   z-index: 500;
@@ -1479,9 +1480,11 @@ width: 100%;
     border-radius: 40px;
   }
 }
-/* @media screen and (max-width: 500px){
-  .preview-img img {
+@media screen and (max-width: 500px){
+  .map-item img {
     border: 15px solid #363062;
-    border-radius: 50px;
+    border-radius: 30px;
+    max-width: 600px;
+    
   }
-} */
+}
