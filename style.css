@@ -604,6 +604,10 @@ footer .logo-container{
   width: 100%;
   background-color: #E9D5DA;
 }
+.tips-preview-img img{
+  max-width: -moz-available;
+  max-width: -webkit-fill-available;
+}
 .tips-preview-content {
   max-width: 900px;
 }
@@ -1414,7 +1418,7 @@ width: 100%;
   
 }
 
-/* Hero: Font Size adjustments */
+/* Home Page */
 @media screen and (max-width: 1005px){
   .hero-headline h1 {
     font-size: 70px;
@@ -1454,21 +1458,6 @@ width: 100%;
     font-weight: 300;
   }
 }
-/* 
-@media screen and (max-width: 485px){
-  .head-text  h1 {
-    font-size: 76px;
-  }
-  .head-text  h4 {
-    font-size: 40px;
-    font-weight: 400;
-  }
-  .head-text  p {
-    font-size: 20px;
-    font-weight: 300;
-  }
-} */
-/* Smallest Screen Size */
 @media screen and (max-width: 460px){
   .head-text  h1 {
     font-size: 50px;
@@ -1482,3 +1471,17 @@ width: 100%;
     font-weight: 300;
   }
 }
+/* Border Adjustment */
+/* Fix */
+@media screen and (max-width: 500px){
+  .preview-img img {
+    border: 15px solid #363062;
+    border-radius: 40px;
+  }
+}
+/* @media screen and (max-width: 500px){
+  .preview-img img {
+    border: 15px solid #363062;
+    border-radius: 50px;
+  }
+} */

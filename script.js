@@ -59,6 +59,7 @@ function MiraViewMap() {
   document.getElementById("div9").style.display="block";
   document.getElementById("div10").style.display="none";
 }
+
 // Button Redirect in Home Page
 document.getElementById("my-about").onclick = function () {
   location.href = "about.html";
