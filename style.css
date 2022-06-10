@@ -50,7 +50,6 @@ table {
   text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 html, body {
   text-size-adjust: none;
@@ -67,9 +66,6 @@ body{
   overflow-x:hidden;
   -webkit-text-size-adjust:none;
 }
-/* html {
-  
-} */
 .container{
     width: 100%;
     max-width: 1200px;
@@ -508,7 +504,7 @@ footer .logo-container{
   width: 100%;
   gap: 20px;
 }
-.review-desc h5{
+.review-desc h1{
   font-size: 90px;
   text-align: center;
 }
@@ -1412,4 +1408,76 @@ width: 100%;
   }
 }
 
+/* General size adjustment */
+@media screen and (min-width: 900px){
+  
+}
 
+/* Hero: Font Size adjustments */
+@media screen and (max-width: 1005px){
+  .hero-headline h1 {
+    font-size: 70px;
+  }
+  .hero-headline h4 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .hero-headline p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 900px){
+  .head-text  h1 {
+    font-size: 76px;
+  }
+  .head-text  h4 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .head-text  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 525px){
+  .head-text  h1 {
+    font-size: 76px;
+  }
+  .head-text  h4 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .head-text  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+/* 
+@media screen and (max-width: 485px){
+  .head-text  h1 {
+    font-size: 76px;
+  }
+  .head-text  h4 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .head-text  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+} */
+/* Smallest Screen Size */
+@media screen and (max-width: 460px){
+  .head-text  h1 {
+    font-size: 50px;
+  }
+  .head-text  h4 {
+    font-size: 38px;
+    font-weight: 400;
+  }
+  .head-text  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
