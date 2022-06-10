@@ -59,6 +59,24 @@ function MiraViewMap() {
   document.getElementById("div9").style.display="block";
   document.getElementById("div10").style.display="none";
 }
-
+// Button Redirect in Home Page
+document.getElementById("my-about").onclick = function () {
+  location.href = "about.html";
+};
+document.getElementById("my-reviews").onclick = function () {
+  location.href = "reviews.html";
+};
+document.getElementById("my-how-to-play").onclick = function () {
+  location.href = "how-to-play.html";
+};
+document.getElementById("my-maps").onclick = function () {
+  location.href = "maps.html";
+};
+document.getElementById("my-tips-tricks").onclick = function () {
+  location.href = "tips-and-tricks.html";
+};
+document.getElementById("my-characters").onclick = function () {
+  location.href = "characters.html";
+};
 
 
