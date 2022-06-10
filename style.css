@@ -230,7 +230,6 @@ nav ul li.items:after{
   bottom: 5px;
   height: 2px;
   width: 100%;
-  /* background: #363062; */
   opacity: 0;
   transition: all 0.2s linear;
 }
@@ -254,6 +253,7 @@ nav ul li:hover a{
   -moz-text-decoration-color: #E9D5DA;
   text-decoration-thickness: 2px;
 }
+
 /* Hamburger-Menu and Close Icon */
 .fa, .fas {
   font-weight: 900;
@@ -299,7 +299,6 @@ nav ul li.btn.hide i:before{
     font-size: 50px;
   }
   nav ul li.btn{
-    /* display: block; */
     display: flex;
     justify-content: flex-end;
   }
@@ -317,7 +316,6 @@ footer{
 .footer-links{
   list-style-type: none;
 }
-
 .about ul{
   list-style-type: disc;
   padding-left: 30px;
@@ -350,7 +348,6 @@ footer .logo-container{
   max-width: 200px;
   
 }
-
 @media screen and (max-width: 1060px) {
   .flex-container {
     display: flex;
@@ -378,10 +375,7 @@ footer .logo-container{
   justify-content: center;
 }
 
-
-
 /*-----LANDING PAGE-----*/
-
 /* Hero Header */
 .hero {
   display: flex;
@@ -655,7 +649,6 @@ footer .logo-container{
 }
 
 /* -----About Page----- */
-
 /*Header Header(About Page)*/
 .header-page {
     display: flex;
@@ -682,9 +675,6 @@ footer .logo-container{
     font-weight: 300;
  }
 
-/* .header-page-content {
-    max-width: 900px;
-} */
 .header-page-content h1{
     font-size: 70px;
     text-align: center;
@@ -757,7 +747,6 @@ footer .logo-container{
   max-width: 900px;
 }
 .review-gallery-content{
-/* justify-content: center; */
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -766,7 +755,6 @@ border-top-left-radius: 13px;
 border-top-right-radius: 13px;
 background-color: #363062;
 color: #E9D5DA;
-/* box-shadow: 0px 14px 0px #363060; */
 }
 .review-gallery-image{
   display: flex;
@@ -782,9 +770,6 @@ color: #E9D5DA;
   max-width: max-content;
 }
 .review-gallery-item p {
-  /* max-width: max-content;
-  background-color: #363062;
-  color: #E9D5DA; */
   width: 100%;
   padding: 10px 20px 75px 20px;
   border: 5px solid #363062;
@@ -832,7 +817,6 @@ color: #E9D5DA;
     border: 20px solid #363062;
     border-radius: 50px;
 }
-
 
 /*How To Play Header*/
 .gallery {
@@ -923,14 +907,13 @@ color: #E9D5DA;
   border: 10px solid #363062;
   box-shadow: 13px 0px 0px #363062;
   border-radius: 14px;
-  overflow: hidden;
-  min-width: 115px;
-  min-height: 132px;
-  text-align: center;
-  /* padding: 40px; */
-  padding: 20px;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  min-width: 115px;
+  min-height: 132px;
 }
 .strats-content-header{
   display: flex;
@@ -938,19 +921,15 @@ color: #E9D5DA;
   width: 100%;
   gap: 20px;
 }
-
 .strats-section{
   background-color: #E9D5DA;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-/* How To Play Page Responsiveness*/
 @media screen and (max-width: 750px) {
   .strats-item{
     flex-wrap: nowrap;
-    /* overflow-x: scroll; */
   }
   .strats-image img{
     max-height: 300px;
@@ -958,7 +937,6 @@ color: #E9D5DA;
   .strats-container{
     display: block;
     position: relative;
-    /* overflow-x: scroll; */
     padding-bottom: 30px;  
     max-width: 900px;
   }
@@ -972,7 +950,6 @@ color: #E9D5DA;
 @media screen and (max-width: 750px) {
   .strats-item{
     flex-wrap: nowrap;
-    /* overflow-x: scroll; */
   }
   .strats-image img{
     max-height: 300px;
@@ -980,7 +957,6 @@ color: #E9D5DA;
   .strats-container{
     display: block;
     position: relative;
-    /* overflow-x: scroll; */
     padding-bottom: 30px;  
     max-width: 900px;
   }
@@ -1000,7 +976,6 @@ color: #E9D5DA;
   flex-direction: column;
   width: 100%; 
 }
-/* Araange this later */
 .tutorials-gallery-thumbnails{
   display: block;
   position: relative;
@@ -1014,7 +989,6 @@ color: #E9D5DA;
   width: 100%;
   justify-content: center;
 }
-
 .tutorials-gallery-item iframe{
   width: 100%;
   border: 20px solid #363062;
@@ -1026,7 +1000,6 @@ color: #E9D5DA;
   justify-content: center;
   width: 100%;
 }
-/* Maps Page Responsiveness*/
 @media screen and (max-width: 1060px) {
   .tutorials-gallery-items {
     flex-wrap: nowrap;
@@ -1094,19 +1067,15 @@ width: 100%;
   max-width: 150px;
 }
 .character-container{
-  /* display: block; */
   position: relative;
   overflow-x: scroll;
   padding-bottom: 30px;
   display: flex; 
   
 }
-
-
 .character-content p, .character-content h5{
   color:#363062;
   letter-spacing: 0.05em;
-  
 }
 .character-content h5{
   font-size: 30px;
@@ -1116,10 +1085,8 @@ width: 100%;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 20px;
-  
+  gap: 20px; 
 }
-
 .crew-img img{
   max-width: 130px;
 }
@@ -1129,14 +1096,12 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
 }
-
 /* Maps */
 .maps-gallery {
   display: flex;
   flex-direction: column;
   width: 100%; 
 }
-/* Araange this later */
 .maps-gallery-thumbnails{
   display: block;
   position: relative;
@@ -1155,7 +1120,6 @@ width: 100%;
   border: 20px solid #363062;
   border-radius: 50px;
 } 
-/* Maps Page Responsiveness*/
 @media screen and (max-width: 1060px) {
   .maps-gallery-items {
     flex-wrap: nowrap;
@@ -1167,7 +1131,6 @@ width: 100%;
   }
 }
 /* Map View */
-/* Re-arrange it later */
 .view-container{
   width: 100%;
   max-width: 1200px;
@@ -1186,7 +1149,6 @@ width: 100%;
 .individual-item .image-1{
   justify-content: center;
   z-index: 400;
-
 }
 .individual-item .view-1{
   justify-content: center;
@@ -1203,7 +1165,6 @@ width: 100%;
   max-width: 900px;
   font-size: 20px;
   font-weight: 300;
-  
 }
 .individual-item img{
   border: 15px solid #363062;
@@ -1221,7 +1182,6 @@ width: 100%;
   padding-top: 160px;
   text-align: center;
 }
-
 /* View Map and View Tasks Button */
 .view {
   border: 10px solid #363062;
@@ -1265,14 +1225,12 @@ width: 100%;
   min-height: 272.567px;
   max-height: 392.9px;
 }
-
 .task-list ul{
   background-color: #363062;
   border: 15px solid #363062;
   border-radius: 30px;
   list-style: circle;
   padding-left: 10px;
-  
 }
 .map-5--tasks {
   padding-top: 30px;
@@ -1280,7 +1238,6 @@ width: 100%;
 .list-heading{
   font-weight: 300;
 }
-
 @media screen and (max-width: 650px) {
   .task-list ul{
     font-size: 10px;
@@ -1306,11 +1263,8 @@ width: 100%;
   .individual-item img{
     min-height: 272.567px;
     min-width: 400px;
-  }
-  
+  } 
 }
-
-/* Testing random codes to work */
 .tips-gallery {
   display: flex;
   flex-direction: column;
@@ -1344,9 +1298,6 @@ width: 100%;
     max-height: 300px;
   }
 }
-
-
-
 /*Game Mechanics and Learn Videos*/
 .video-container {
   display: flex;
@@ -1361,8 +1312,6 @@ width: 100%;
 }
 .video-youtube img{
   max-width: 900px;
-  /* border: 20px solid #363062;
-  border-radius: 50px; */
   width: 100%;
 }
 .video-section p{
@@ -1382,7 +1331,6 @@ width: 100%;
   border-radius: 22px;
   padding-top: 0px;
   padding-bottom: 20px; 
-  
 }
 .video-youtube iframe{
   min-width: 400px;
