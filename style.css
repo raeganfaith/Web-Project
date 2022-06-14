@@ -999,8 +999,10 @@ color: #E9D5DA;
 }
 .tutorials-gallery-item iframe{
   width: 100%;
+  min-width: 285px;
+  min-height: 300px;
+  border-radius: 10px;
   border: 20px solid #363062;
-  border-radius: 25px;
   min-width: 530px;
 } 
 .tutorials-section button{
@@ -1341,7 +1343,7 @@ width: 100%;
   padding-bottom: 20px; 
 }
 .video-youtube iframe{
-  min-width: 300px;
+  min-width: 285px;
   min-height: 300px;
   border-radius: 10px;
 }
@@ -1526,5 +1528,24 @@ width: 100%;
   .map-item .map-3 {
     margin-top: 0px;
     max-height: 265px;
+  }
+}
+
+/* How To Play */
+@media screen and (max-width: 485px){
+  .strats-content h5 {
+    font-size: 25px;
+  }
+  .gallery-item img {
+    border: 15px solid #363062;
+    border-radius: 45px;
+  }
+}
+@media screen and (max-width:575px){
+  .tutorials-gallery-item iframe {
+    border-radius: 15px;
+    border: 15px solid #363062;
+    min-width: 275px;
+    max-width: 280px;
   }
 }
