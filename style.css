@@ -1415,11 +1415,6 @@ width: 100%;
   }
 }
 
-/* General size adjustment */
-@media screen and (min-width: 900px){
-  
-}
-
 /* Home Page */
 @media screen and (max-width: 1005px){
   .hero-headline h1 {
@@ -1448,7 +1443,6 @@ width: 100%;
   }
 }
 @media screen and (max-width: 525px){
-  
   .head-text  h1 {
     font-size: 76px;
   }
@@ -1478,7 +1472,8 @@ width: 100%;
     font-weight: 300;
   }
 }
-/* About General */
+
+/* About Page*/
 @media screen and (max-width: 835px){
   .about-page-section  h1 {
     font-size: 45px;
@@ -1488,16 +1483,26 @@ width: 100%;
     font-weight: 300;
   }
 }
-
-/* Border Adjustment */
+@media screen and (max-width: 710px){
+  .header-page-section  h1 {
+    font-size: 50px;
+  }
+  .about-page-section  h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 485px){
+  .header-page-section  h1 {
+    font-size: 40px;
+  }
+}
+/* Border Adjustment Home Page*/
 /* Fix */
 @media screen and (max-width: 500px){
   .preview-img img {
     border: 15px solid #363062;
     border-radius: 40px;
   }
-}
-@media screen and (max-width: 500px){
   .map-item img {
     border: 15px solid #363062;
     border-radius: 30px;
