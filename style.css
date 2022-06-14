@@ -1334,6 +1334,7 @@ width: 100%;
 .video-section a {
   color: #363062;
   text-decoration: underline;
+  font-weight: bolder;
 }
 .video-youtube{
   display: flex;
@@ -1397,7 +1398,7 @@ width: 100%;
 }
 .mods-headline p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 100;
   text-align: center;
 }
 @media screen and (max-width: 900px) {
@@ -1460,7 +1461,11 @@ width: 100%;
   }
   .header-page-img img {
     border: 15px solid #363062;
-    border-radius: 40px;
+    border-radius: 30px;
+  }
+  .characters-preview-img {
+    border: 15px solid #363062;
+    border-radius: 30px;
   }
 }
 @media screen and (max-width: 460px){
@@ -1505,7 +1510,7 @@ width: 100%;
 @media screen and (max-width: 500px){
   .preview-img img {
     border: 15px solid #363062;
-    border-radius: 40px;
+    border-radius: 30px;
   }
   .map-item img {
     border: 15px solid #363062;
@@ -1540,12 +1545,12 @@ width: 100%;
   }
   .gallery-item img {
     border: 15px solid #363062;
-    border-radius: 45px;
+    border-radius: 30px;
   }
 }
 @media screen and (max-width:575px){
   .tutorials-gallery-item iframe {
-    border-radius: 15px;
+    border-radius: 30px;
     border: 15px solid #363062;
     min-width: 275px;
     max-width: 280px;
@@ -1558,5 +1563,18 @@ width: 100%;
     max-width: 240px;
     min-width: 130px;
     min-width: 240px;
+  }
+}
+
+/* Characters */
+@media screen and (max-width:900px){
+  .mods-headline {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width:550px){
+  .mods-image img {
+    border: 15px solid #363062;
+    border-radius: 30px;
   }
 }
