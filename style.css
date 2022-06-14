@@ -111,7 +111,7 @@ body{
   padding-top: 0%;
 }
 .pt--xs{
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .pt--sm{
   padding-top: 10px;
@@ -774,8 +774,10 @@ color: #E9D5DA;
     justify-content: center;
     text-align: center;
 }
-.review-gallery-items-desc p{
+.review-gallery-items-desc p {
   max-width: max-content;
+  font-size: 20px;
+  font-weight: 300;
 }
 .review-gallery-item p {
   width: 100%;
@@ -1547,5 +1549,14 @@ width: 100%;
     border: 15px solid #363062;
     min-width: 275px;
     max-width: 280px;
+  }
+}
+
+/* Review Page */
+@media screen and (max-width:575px){
+  .review-gallery-item p {
+    max-width: 240px;
+    min-width: 130px;
+    min-width: 240px;
   }
 }
