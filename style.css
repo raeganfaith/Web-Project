@@ -875,7 +875,7 @@ color: #E9D5DA;
   border-radius: 35px;
   margin-top: 10px;
   min-width: 900px;
-  min-width: 350px;
+  min-width: 285px;
 }
 .strats-content{
   flex: 1 1 auto;
@@ -1341,7 +1341,7 @@ width: 100%;
   padding-bottom: 20px; 
 }
 .video-youtube iframe{
-  min-width: 400px;
+  min-width: 300px;
   min-height: 300px;
   border-radius: 10px;
 }
