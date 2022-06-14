@@ -316,6 +316,7 @@ footer{
 }
 .footer-links{
   list-style-type: none;
+  padding-bottom: 5px;
 }
 .about ul{
   list-style-type: disc;
@@ -1447,6 +1448,7 @@ width: 100%;
   }
 }
 @media screen and (max-width: 525px){
+  
   .head-text  h1 {
     font-size: 76px;
   }
@@ -1457,6 +1459,10 @@ width: 100%;
   .head-text  p {
     font-size: 20px;
     font-weight: 300;
+  }
+  .header-page-img img {
+    border: 15px solid #363062;
+    border-radius: 40px;
   }
 }
 @media screen and (max-width: 460px){
@@ -1472,6 +1478,17 @@ width: 100%;
     font-weight: 300;
   }
 }
+/* About General */
+@media screen and (max-width: 835px){
+  .about-page-section  h1 {
+    font-size: 45px;
+  }
+  .about-page-section  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
 /* Border Adjustment */
 /* Fix */
 @media screen and (max-width: 500px){
@@ -1485,6 +1502,24 @@ width: 100%;
     border: 15px solid #363062;
     border-radius: 30px;
     max-width: 600px;
-    
+    min-width: 200px;
+  }
+  .map-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+  .map-item .map-1 {
+    max-height: 265px;
+  }
+  .map-item .map-2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-height: 265px;
+  }
+  .map-item .map-3 {
+    margin-top: 0px;
+    max-height: 265px;
   }
 }
