@@ -340,7 +340,6 @@ h4{
 .logo-container a{
   text-shadow: 0 0 2px #E9D5DA, 0px 5px 5px #403d3d;
 }
-
 footer .logo-container{
   flex-direction: row;
   justify-content: flex-start;
@@ -531,7 +530,13 @@ footer .logo-container{
     max-width: 900px;
 }
 }
-
+@media screen and (max-width:575px){
+  .review-gallery-item p {
+    max-width: 240px;
+    min-width: 130px;
+    min-width: 240px;
+  }
+}
 /* Maps */
 .maps{
   display: flex;
@@ -655,6 +660,97 @@ footer .logo-container{
   font-size: 20px;
   font-weight: 300;
 }
+/* Landing Page Breaking Points */
+@media screen and (max-width: 1005px){
+  .hero-headline h1 {
+    font-size: 70px;
+  }
+  .hero-headline h4 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .hero-headline p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 900px){
+  .head-text  h1 {
+    font-size: 76px;
+  }
+  .head-text  h4 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .head-text  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 525px){
+  .head-text  h1 {
+    font-size: 76px;
+  }
+  .head-text  h4 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .head-text  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .header-page-img img {
+    border: 15px solid #363062;
+    border-radius: 30px;
+  }
+  .characters-preview-img {
+    border: 15px solid #363062;
+    border-radius: 30px;
+  }
+}
+@media screen and (max-width: 500px){
+  .preview-img img {
+    border: 15px solid #363062;
+    border-radius: 30px;
+  }
+  .map-item img {
+    border: 15px solid #363062;
+    border-radius: 30px;
+    max-width: 600px;
+    min-width: 200px;
+  }
+  .map-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+  .map-item .map-1 {
+    max-height: 265px;
+  }
+  .map-item .map-2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-height: 265px;
+  }
+  .map-item .map-3 {
+    margin-top: 0px;
+    max-height: 265px;
+  }
+}
+@media screen and (max-width: 460px){
+  .head-text  h1 {
+    font-size: 50px;
+  }
+  .head-text  h4 {
+    font-size: 38px;
+    font-weight: 400;
+  }
+  .head-text  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
 
 /* -----About Page----- */
 /*Header Header(About Page)*/
@@ -682,19 +778,16 @@ footer .logo-container{
     font-size: 20px;
     font-weight: 300;
  }
-
 .header-page-content h1{
     font-size: 70px;
     text-align: center;
 }
-
 /* Title Underline */
 .underline{
     width:100%;
     border: 4px solid #E9D5DA;
     border-radius: 10px;
 }
-
 /* Game Information */
 .about-page-section{
   flex: 1 1 100%; 
@@ -729,6 +822,28 @@ footer .logo-container{
   margin-top: 0px;
   margin-bottom: 0px;
   max-width: 700px;
+}
+@media screen and (max-width: 835px){
+  .about-page-section  h1 {
+    font-size: 45px;
+  }
+  .about-page-section  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 710px){
+  .header-page-section  h1 {
+    font-size: 50px;
+  }
+  .about-page-section  h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 485px){
+  .header-page-section  h1 {
+    font-size: 40px;
+  }
 }
 
 /* Reviews Section */
@@ -799,7 +914,6 @@ color: #E9D5DA;
 .star-icon img {
   max-width: 150px;
 }
-
 @media screen and (max-width: 1060px) {
     .review-gallery-items {
         flex-wrap: nowrap;
@@ -827,7 +941,6 @@ color: #E9D5DA;
     border: 20px solid #363062;
     border-radius: 50px;
 }
-
 /*How To Play Header*/
 .gallery {
     display: flex;
@@ -860,7 +973,6 @@ color: #E9D5DA;
         max-height: 300px;
     }
 }
-
 /* Game Strategies */
 .strats {
   margin-top: 20px;
@@ -957,29 +1069,26 @@ color: #E9D5DA;
     font-size-adjust: 0.58;
   }
 }
-@media screen and (max-width: 750px) {
-  .strats-item{
-    flex-wrap: nowrap;
-  }
-  .strats-image img{
-    max-height: 300px;
-  }
-  .strats-container{
-    display: block;
-    position: relative;
-    padding-bottom: 30px;  
-    max-width: 900px;
-  }
-  h5{
-    font-size: 4vw;
-  }
-  .strats-content-header{
-    font-size: 10px;
-  }
-  .strats-content-header{
-    font-size: 10px;
+@media screen and (max-width:575px){
+  .tutorials-gallery-item iframe {
+    border-radius: 30px;
+    border: 15px solid #363062;
+    min-width: 275px;
+    max-width: 280px;
   }
 }
+@media screen and (max-width: 485px){
+  .strats-content h5 {
+    font-size: 25px;
+  }
+  .gallery-item img {
+    border: 15px solid #363062;
+    border-radius: 30px;
+  }
+}
+
+
+
 /* Tutorials */
 .tutorials-gallery {
   display: flex;
@@ -1140,6 +1249,17 @@ width: 100%;
   }
   .maps-gallery-item img{
     max-height: 300px;
+  }
+}
+@media screen and (max-width:900px){
+  .mods-headline {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width:550px){
+  .mods-image img {
+    border: 15px solid #363062;
+    border-radius: 30px;
   }
 }
 /* Map View */
@@ -1420,161 +1540,4 @@ width: 100%;
   }
 }
 
-/* Home Page */
-@media screen and (max-width: 1005px){
-  .hero-headline h1 {
-    font-size: 70px;
-  }
-  .hero-headline h4 {
-    font-size: 30px;
-    font-weight: 400;
-  }
-  .hero-headline p {
-    font-size: 15px;
-    font-weight: 300;
-  }
-}
-@media screen and (max-width: 900px){
-  .head-text  h1 {
-    font-size: 76px;
-  }
-  .head-text  h4 {
-    font-size: 40px;
-    font-weight: 400;
-  }
-  .head-text  p {
-    font-size: 20px;
-    font-weight: 300;
-  }
-}
-@media screen and (max-width: 525px){
-  .head-text  h1 {
-    font-size: 76px;
-  }
-  .head-text  h4 {
-    font-size: 40px;
-    font-weight: 400;
-  }
-  .head-text  p {
-    font-size: 20px;
-    font-weight: 300;
-  }
-  .header-page-img img {
-    border: 15px solid #363062;
-    border-radius: 30px;
-  }
-  .characters-preview-img {
-    border: 15px solid #363062;
-    border-radius: 30px;
-  }
-}
-@media screen and (max-width: 460px){
-  .head-text  h1 {
-    font-size: 50px;
-  }
-  .head-text  h4 {
-    font-size: 38px;
-    font-weight: 400;
-  }
-  .head-text  p {
-    font-size: 20px;
-    font-weight: 300;
-  }
-}
 
-/* About Page*/
-@media screen and (max-width: 835px){
-  .about-page-section  h1 {
-    font-size: 45px;
-  }
-  .about-page-section  p {
-    font-size: 20px;
-    font-weight: 300;
-  }
-}
-@media screen and (max-width: 710px){
-  .header-page-section  h1 {
-    font-size: 50px;
-  }
-  .about-page-section  h1 {
-    font-size: 40px;
-  }
-}
-@media screen and (max-width: 485px){
-  .header-page-section  h1 {
-    font-size: 40px;
-  }
-}
-/* Border Adjustment Home Page*/
-/* Fix */
-@media screen and (max-width: 500px){
-  .preview-img img {
-    border: 15px solid #363062;
-    border-radius: 30px;
-  }
-  .map-item img {
-    border: 15px solid #363062;
-    border-radius: 30px;
-    max-width: 600px;
-    min-width: 200px;
-  }
-  .map-flex {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    gap: 10px;
-  }
-  .map-item .map-1 {
-    max-height: 265px;
-  }
-  .map-item .map-2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    max-height: 265px;
-  }
-  .map-item .map-3 {
-    margin-top: 0px;
-    max-height: 265px;
-  }
-}
-
-/* How To Play */
-@media screen and (max-width: 485px){
-  .strats-content h5 {
-    font-size: 25px;
-  }
-  .gallery-item img {
-    border: 15px solid #363062;
-    border-radius: 30px;
-  }
-}
-@media screen and (max-width:575px){
-  .tutorials-gallery-item iframe {
-    border-radius: 30px;
-    border: 15px solid #363062;
-    min-width: 275px;
-    max-width: 280px;
-  }
-}
-
-/* Review Page */
-@media screen and (max-width:575px){
-  .review-gallery-item p {
-    max-width: 240px;
-    min-width: 130px;
-    min-width: 240px;
-  }
-}
-
-/* Characters */
-@media screen and (max-width:900px){
-  .mods-headline {
-    padding-left: 0px;
-  }
-}
-@media screen and (max-width:550px){
-  .mods-image img {
-    border: 15px solid #363062;
-    border-radius: 30px;
-  }
-}
