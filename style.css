@@ -1539,4 +1539,11 @@ width: 100%;
   }
 }
 
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #E9D5DA;
+  -moz-text-decoration-color: #E9D5DA;
+  text-decoration-thickness: 2px;
+}
+
 
