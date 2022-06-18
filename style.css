@@ -886,8 +886,8 @@ footer .logo-container{
   flex-direction: column-reverse;
   width: 100%;
   justify-content: center;
-  background-color: #E9D5DA;
-  /* border: 13px solid #363062; */
+  /* background-color: #E9D5DA; */
+  border: 13px solid #363062;
   border-radius: 28px;
   max-width: 900px;
   background-image: linear-gradient(#E9D5DA, #363062);
