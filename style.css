@@ -896,7 +896,7 @@ footer .logo-container{
 display: flex;
 flex-direction: column;
 justify-content: center;
-border: 5px solid #363062;
+/* border: 5px solid #363062; */
 border-top-left-radius: 13px;
 border-top-right-radius: 13px;
 background-color: #363062;
