@@ -890,13 +890,13 @@ footer .logo-container{
   border: 13px solid #363062;
   border-radius: 28px;
   max-width: 900px;
-  /* background-image: linear-gradient(#E9D5DA, #363062); */
+  background-image: conic-gradient(#E9D5DA 0deg, #E9D5DA 90deg, #363062 90deg, #363062 180deg, #363062 180deg, #363062 270deg, #E9D5DA 270deg);
 }
 .review-gallery-content{
 display: flex;
 flex-direction: column;
 justify-content: center;
-/* border: 5px solid #363062; */
+border: 5px solid #363062;
 border-top-left-radius: 13px;
 border-top-right-radius: 13px;
 background-color: #363062;
