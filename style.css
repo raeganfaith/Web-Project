@@ -492,6 +492,7 @@ footer .logo-container{
   border-radius: 25px;
   margin-top: 10px;
   min-width: 900px;
+  background-color: #363062;
 }
 .review-content{
   flex: 1 1 auto;
