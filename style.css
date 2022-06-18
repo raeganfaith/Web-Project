@@ -1501,9 +1501,9 @@ width: 100%;
 .video-content {
   max-width: 900px;
 }
-.video-content h1{
+/* .video-content h1{
   font-size: 70px;
-}
+} */
 
 /* Character Page: Best Mods You should try */
 /* Hero Header */
@@ -1532,7 +1532,7 @@ width: 100%;
 }
 .mods-headline {
   padding-top: 75px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
 .mods-headline h4 {
   font-size: 20px;
