@@ -553,8 +553,9 @@ footer .logo-container{
 @media screen and (max-width:575px){
   .review-gallery-item p {
     max-width: 240px;
-    min-width: 130px;
-    min-width: 240px;
+    /* min-width: 130px;
+    min-width: 240px; */
+    
   }
 }
 /* Maps */
@@ -918,10 +919,9 @@ color: #E9D5DA;
   width: 100%;
   padding: 10px 20px 75px 20px;
   border: 5px solid #363062;
-  border-radius: 22px;
-  
+  border-radius: 22px;  
   max-width: 300px;
-  max-height: 239px;
+  min-height: 240px;
 }
 .review-gallery-item img {
     max-width: 100px;
