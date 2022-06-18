@@ -887,9 +887,10 @@ footer .logo-container{
   width: 100%;
   justify-content: center;
   background-color: #E9D5DA;
-  border: 13px solid #363062;
+  /* border: 13px solid #363062; */
   border-radius: 28px;
   max-width: 900px;
+  background-image: linear-gradient(#E9D5DA, #363062);
 }
 .review-gallery-content{
 display: flex;
@@ -898,9 +899,8 @@ justify-content: center;
 border: 5px solid #363062;
 border-top-left-radius: 13px;
 border-top-right-radius: 13px;
-/* background-color: #363062; */
+background-color: #363062;
 color: #E9D5DA;
-background-image: linear-gradient(#E9D5DA, #363062);
 
 }
 .review-gallery-image{
