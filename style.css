@@ -253,7 +253,13 @@ nav ul li:hover a{
   -moz-text-decoration-color: #E9D5DA;
   text-decoration-thickness: 2px;
 }
-
+/* logo hover effects */
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #E9D5DA;
+  -moz-text-decoration-color: #E9D5DA;
+  text-decoration-thickness: 2px;
+}
 /* Hamburger-Menu and Close Icon */
 .fa, .fas {
   font-weight: 900;
@@ -1539,11 +1545,6 @@ width: 100%;
   }
 }
 
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #E9D5DA;
-  -moz-text-decoration-color: #E9D5DA;
-  text-decoration-thickness: 2px;
-}
+
 
 
