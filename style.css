@@ -201,7 +201,7 @@ nav a {
   text-transform: uppercase;
 }
 nav{
-  padding: 9px 5px;
+  padding: 12px 5px;
 } 
 nav ul{
   list-style: none;
@@ -254,7 +254,7 @@ nav ul li:hover a{
   text-decoration-thickness: 2px;
 }
 /* logo hover */
-a:hover {
+.logo-container a:hover {
   text-decoration: underline;
   text-decoration-color: #E9D5DA;
   -moz-text-decoration-color: #E9D5DA;
@@ -376,6 +376,19 @@ footer .logo-container{
   font-size: 25px; 
   min-width: 250px;
 }
+.button {
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: #363062;
+  color: #E9D5DA;
+}
+/* Tutorials button titles -- no function */
+#button-title .button {
+  border-radius: 0px;
+  background-color: #E9D5DA;
+  color: #363062;
+}
 .review-btn{
   display: flex;
   align-items: center;
@@ -400,9 +413,6 @@ footer .logo-container{
 }
 .hero-image {
   max-width: 600px;
-}
-.hero-headline h1, h4{
-  text-shadow: 0 0 2px #E9D5DA, 0px 5px 5px #403d3d;
 }
 .hero-headline {
   letter-spacing: 0.05em;
