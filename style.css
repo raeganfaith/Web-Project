@@ -253,7 +253,7 @@ nav ul li:hover a{
   -moz-text-decoration-color: #E9D5DA;
   text-decoration-thickness: 2px;
 }
-/* logo hover effects */
+/* logo hover */
 a:hover {
   text-decoration: underline;
   text-decoration-color: #E9D5DA;
@@ -401,8 +401,13 @@ footer .logo-container{
 .hero-image {
   max-width: 600px;
 }
-.hero-headline {
+.hero-headline h1, h4{
   text-shadow: 0 0 2px #E9D5DA, 0px 5px 5px #403d3d;
+}
+.hero-headline {
+  letter-spacing: 0.05em;
+}
+.hero-headline {
   letter-spacing: 0.05em;
 }
 .hero-headline h1 {
