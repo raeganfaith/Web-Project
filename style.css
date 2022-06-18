@@ -1534,6 +1534,9 @@ width: 100%;
   padding-top: 75px;
   /* padding-left: 30px; */
 }
+.pt--xl {
+  padding-top: 120px;
+}
 .mods-headline h4 {
   font-size: 20px;
   font-weight: 400;
@@ -1560,6 +1563,9 @@ width: 100%;
   }
   .mods-section{
     flex: 1 1 50%;
+  }
+  .mods-headline {
+    padding-left: 20px;
   }
 }
 
