@@ -900,6 +900,7 @@ border-top-left-radius: 13px;
 border-top-right-radius: 13px;
 background-color: #363062;
 color: #E9D5DA;
+max-width: fit-content;
 }
 .review-gallery-image{
   display: flex;
