@@ -492,6 +492,7 @@ footer .logo-container{
   border-radius: 25px;
   margin-top: 10px;
   min-width: 900px;
+  background-color: #363062;
 }
 .review-content{
   flex: 1 1 auto;
@@ -885,10 +886,11 @@ footer .logo-container{
   flex-direction: column-reverse;
   width: 100%;
   justify-content: center;
-  background-color: #E9D5DA;
+  /* background-color: #E9D5DA; */
   border: 13px solid #363062;
   border-radius: 28px;
   max-width: 900px;
+  background-image: linear-gradient(#E9D5DA, #363062);
 }
 .review-gallery-content{
 display: flex;
@@ -899,6 +901,7 @@ border-top-left-radius: 13px;
 border-top-right-radius: 13px;
 background-color: #363062;
 color: #E9D5DA;
+
 }
 .review-gallery-image{
   display: flex;
