@@ -845,6 +845,7 @@ footer .logo-container{
   margin-bottom: 0px;
   max-width: 700px;
 }
+
 @media screen and (max-width: 835px){
   .about-page-section  h1 {
     font-size: 45px;
@@ -853,11 +854,13 @@ footer .logo-container{
     font-size: 20px;
     font-weight: 300;
   }
+ 
 }
 @media screen and (max-width: 710px){
   .header-page-section  h1 {
     font-size: 50px;
   }
+  
   .about-page-section  h1 {
     font-size: 40px;
   }
@@ -866,6 +869,7 @@ footer .logo-container{
   .header-page-section  h1 {
     font-size: 40px;
   }
+  
 }
 
 /* Reviews Section */
@@ -1501,9 +1505,9 @@ width: 100%;
 .video-content {
   max-width: 900px;
 }
-/* .video-content h1{
+.video-content h1{
   font-size: 70px;
-} */
+}
 
 /* Character Page: Best Mods You should try */
 /* Hero Header */
