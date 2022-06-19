@@ -253,7 +253,7 @@ nav ul li:hover a{
   -moz-text-decoration-color: #E9D5DA;
   text-decoration-thickness: 2px;
 }
-/* logo hover */
+/* logo hover effects*/
 .logo-container a:hover {
   text-decoration: underline;
   text-decoration-color: #E9D5DA;
