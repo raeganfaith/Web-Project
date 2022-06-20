@@ -290,6 +290,19 @@ nav ul li.btn.hide i:before{
 .logo-container img{
   max-width: 120px; 
 }
+@media all and (min-width: 490px) {
+  .logo-container a {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 480px) {
+  .logo-container img{ 
+    max-width: 90px; 
+  }
+  .logo-container a {
+    font-size: 16px;
+  }
+}
 @media all and (max-width: 1185px){
   nav ul li.items{
     width: 100%;
@@ -1096,12 +1109,19 @@ color: #E9D5DA;
     font-size-adjust: 0.58;
   }
 }
-@media screen and (max-width:575px){
+@media screen and (min-width:650px){
   .tutorials-gallery-item iframe {
-    border-radius: 30px;
-    border: 15px solid #363062;
-    min-width: 275px;
+    min-width: 530px;
+  }
+}
+@media screen and (max-width:400px){
+  .tutorials-gallery-item iframe {
     max-width: 280px;
+  } 
+}
+@media screen and (max-width:320px){
+  .tutorials-gallery-item iframe {
+    min-width: 120px;
   }
 }
 @media screen and (max-width: 485px){
@@ -1137,11 +1157,10 @@ color: #E9D5DA;
 }
 .tutorials-gallery-item iframe{
   width: 100%;
-  min-width: 285px;
   min-height: 300px;
   border-radius: 10px;
   border: 20px solid #363062;
-  min-width: 530px;
+  /* min-width: 530px; */
 } 
 .tutorials-section button{
   display: flex;
