@@ -78,7 +78,7 @@ body{
   margin: 0 auto;
   padding: 0px;
 }
- 
+
 /* Class Helper for easy padding adjustment */
 .p--sm {
   padding: 10px;
@@ -379,7 +379,7 @@ footer .logo-container{
     gap: 15px;
   }
 }
-/* Buttons */
+/* Button */
 .button {
   border: 10px solid #363062;
   border-radius: 50px;
@@ -1385,7 +1385,13 @@ width: 100%;
   min-width: 250px;
   min-width: 265px;
 }
-
+.view {
+  transition-duration: 0.4s;
+}
+.view:hover {
+  background-color: #363062;
+  color: #E9D5DA;
+}
 .view-desc{
   display: flex;
   justify-content: center;
