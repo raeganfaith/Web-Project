@@ -61,6 +61,10 @@ html, body {
   display: block;
   overflow-x: hidden;
 }
+/* Hide Scrollbar to chrome */
+html, body ::-webkit-scrollbar {
+  overflow-x: hidden;
+}  
 body{
   background-image: url('img/background.jpg'); 
   background-size: 100%;
