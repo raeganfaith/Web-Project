@@ -59,6 +59,7 @@ html, body {
   width: 100%;
   display: block;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 body{
   background-image: url('img/background.jpg'); 
@@ -78,7 +79,7 @@ body{
   margin: 0 auto;
   padding: 0px;
 }
-
+ 
 /* Class Helper for easy padding adjustment */
 .p--sm {
   padding: 10px;
@@ -396,6 +397,7 @@ footer .logo-container{
   background-color: #363062;
   color: #E9D5DA;
 }
+
 /* Tutorials button titles -- no function */
 #button-title .button {
   border-radius: 0px;
@@ -1384,6 +1386,7 @@ width: 100%;
   min-width: 250px;
   min-width: 265px;
 }
+
 .view-desc{
   display: flex;
   justify-content: center;
