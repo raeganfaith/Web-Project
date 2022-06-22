@@ -50,6 +50,7 @@ table {
   text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 html, body {
   text-size-adjust: none;
@@ -59,8 +60,11 @@ html, body {
   width: 100%;
   display: block;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
+/* Hide Scrollbar to chrome */
+html, body ::-webkit-scrollbar {
+  overflow-x: hidden;
+}  
 body{
   background-image: url('img/background.jpg'); 
   background-size: 100%;
@@ -79,7 +83,7 @@ body{
   margin: 0 auto;
   padding: 0px;
 }
- 
+
 /* Class Helper for easy padding adjustment */
 .p--sm {
   padding: 10px;
@@ -1386,7 +1390,13 @@ width: 100%;
   min-width: 250px;
   min-width: 265px;
 }
-
+.view {
+  transition-duration: 0.4s;
+}
+.view:hover {
+  background-color: #363062;
+  color: #E9D5DA;
+}
 .view-desc{
   display: flex;
   justify-content: center;
