@@ -9,7 +9,8 @@
   The website's name is "Among Us for Novice and Experts." This site aims to help the  players  of  Among  Us  by  discussing  the  basic  to  advance  objectives  they  need  to understand  to  have  better  gameplay  for  them  and  other  players,  making  the  game environment safe and healthy.
 
 # Web Project Site Map
-![](img/SiteMao.png)
+
+![](img/SiteMap.png)
 
 # About the Developer
 Front End Developer: Raegan Faith Paguirigan
