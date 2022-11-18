@@ -13,4 +13,4 @@
 ![](img/SiteMap.png)
 
 # About the Developer
-Front End Developer: Raegan Faith Paguirigan
+Front End Designer and Developer: Raegan Faith Paguirigan
