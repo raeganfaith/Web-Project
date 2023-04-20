@@ -14,4 +14,4 @@
 
 # About the Developer
 Front End Designer and Developer: Raegan Faith Paguirigan
-This is one of my first project in web development when I was in 1st year. 
+
